@@ -15,12 +15,16 @@ async function delayTime(ms) {
   const accounts = JSON.parse(accountsJson);
 
   for (const account of accounts) {
-    const { username, password, panelnum,bark } = account;
+    const { username, password, panelnum,bark,addr } = account;
 
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
+	let url = `https://panel${panelnum}.serv00.com/login/?next=/`;
 
-    let url = `https://panel${panelnum}.serv00.com/login/?next=/`;
+	if(addr){
+		url = addr
+	}
+
 
     try {
       // 修改网址为新的登录页面
