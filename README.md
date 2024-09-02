@@ -6,9 +6,10 @@
 　　在 GitHub 仓库中，进入右上角`Settings`，在侧边栏找到`Secrets and variables`，点击展开选择`Actions`，点击`New repository secret`，然后创建一个名为`ACCOUNTS_JSON`的`Secret`，将 JSON 格式的账号密码字符串作为它的值。在bark中填入bark软件的推送apiKey，可留空。在host填入ssh的连接地址。如下格式：  
 ```
 [  
-  { "username": "qinshihuang", "password": "linux.do", "panelnum": "0", "bark": "apikey", "host": "s3.serv00.com" },  
-  { "username": "zhaogao", "password": "daqinzhonggong", "panelnum": "2", "bark": "apikey", "host": "s3.serv00.com" },  
-  { "username": "heiheihei", "password": "shaibopengke", "panelnum": "3", "bark": "apikey", "host": "s3.serv00.com" }  
+  { "username": "fyy5210", "password": "", "panelnum": "6", "bark": "apikey", "host": "s6.serv00.com" },  
+  { "username": "566521a", "password": "", "panelnum": "8", "bark": "apikey", "host": "s8.serv00.com" },  
+  { "username": "1637045610a", "password": "", "panelnum": "8", "bark": "apikey", "host": "s8.serv00.com" },  
+  { "username": "178621833abc", "password": "", "panelnum": "10", "bark": "apikey", "host": "s10.serv00.com" }
 ]
 ```
 > 其中`panelnum`参数为面板编号，即为你所收到注册邮件的`panel*.serv00.com`中的`*`数值。
